@@ -118,7 +118,7 @@ function fnGame() {
         else if(returnedCards.length == 2 && (returnedCards[0] !== returnedCards[1])) {
             // Dans ce cas la le joueur a un delay de 0.5 secondes pendant lequelle il ne peut pas intergir afin de ne pas faire bug le jeu.
             onClick = 1;
-            setTimeout(fnSetupTable, 500)
+            setTimeout(fnSetupTable, 1000)
             // Si le joueur ne trouve pas de pair le score diminue de 10.
             score -=10;
             changScore.innerHTML = "Score: "+score;
