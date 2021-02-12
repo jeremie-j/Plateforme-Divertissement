@@ -69,7 +69,7 @@ function fnCheckCarte(i) {
     else {
         fnReturnCards(i)
         // Je path de la carte, afin de déterminer le numéro de carte exacte.
-        returnedCards.push(allImage[i].src.split('/')[11].slice(0, -4));
+        returnedCards.push(allImage[i].src.split('/')[6].slice(0, -4));
         // Je l'intégre dans l'état Cartes afin de gareder en memoire quelle carte a été retourné.
         currentStatCards[positionReturnedCards] = 1;
         // Je reset le tableau qui reservira.
