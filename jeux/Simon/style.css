@@ -1,0 +1,125 @@
+/* all */
+*{
+    font-family:'Poppins', sans-serif;;
+}
+/* taille jeu */
+.jeu{
+    width: 100%;
+}
+
+.start-button {
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  box-shadow: 0 7px #999;
+}
+
+.start-button:hover {background-color:white}
+
+.start-button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.info-section{
+text-align: center;
+  }
+
+.simon-red {
+    background-color: red;
+    box-shadow: 0 0 0 1px red ;
+    transition: 0.15s;
+    border-radius: 50%;
+}
+
+.simon-blue {
+  background-color: blue;
+  box-shadow: 0 0 0 1px blue ;
+  transition: 0.15s;
+  border-radius: 50%;
+}
+
+.simon-green {
+  background-color: green;
+  box-shadow: 0 0 0 1px green ;
+  transition: 0.15s;
+  border-radius: 50%;
+}
+
+.simon-yellow {
+  background-color:yellow;
+  box-shadow: 0 0 0 1px yellow ;
+  transition: 0.15s;
+  border-radius: 50%;
+}
+
+.simon-red.activated{
+    background-color: red;
+    box-shadow:4px 4px 4px black,-1px -1px 4px gray;
+}
+
+.simon-blue.activated{
+    background-color: blue;
+    box-shadow:4px 4px 4px black,-1px -1px 4px gray;
+}
+
+.simon-yellow.activated{
+    background-color: yellow;
+    box-shadow:4px 4px 4px black,-1px -1px 4px gray;
+}
+
+.simon-green.activated{
+    background-color: green;
+    box-shadow:4px 4px 4px black,-1px -1px 4px gray;
+}
+
+.simon-red:hover,
+  .simon-red:focus {
+    background-color: RED;
+    box-shadow: 0 0 0 1px red inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 red, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+
+  .simon-blue:hover,
+  .simon-blue:focus {
+    background-color: blue;
+    box-shadow: 0 0 0 1px blue inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 blue, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+  .simon-green:hover,
+  .simon-green:focus {
+    background-color: green;
+    box-shadow: 0 0 0 1px green inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 green, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+  .simon-yellow:hover,
+  .simon-yellow:focus {
+    background-color: yellow;
+    box-shadow: 0 0 0 1px yellow inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 yellow, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+  }
+
+  
+/* affichage des grilles pour les case */
+section{
+    display:grid;
+    justify-content: center;
+    grid-template-rows: 160px 160px;
+    grid-template-columns: 160px 160px;
+    grid-gap: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+/* entête */
+header {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .heading {
+    font-size: 3em;
+  }
+
+ body{
+   overflow:hidden;
+ }
