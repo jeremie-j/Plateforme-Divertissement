@@ -1,0 +1,30 @@
+#Logo {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  height: 80px;
+  width: 40px;
+}
+#MiddleWave {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+#BottomWave {
+  width: 100vw;
+  position: absolute;
+  bottom: -10vh;
+  left: 0;
+  z-index: -1;
+}
+#footer-wave {
+  position: absolute;
+  bottom: -250vh;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}

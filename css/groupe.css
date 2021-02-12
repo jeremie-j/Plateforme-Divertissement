@@ -1,0 +1,81 @@
+#photo-wrapper {
+  height: 500px;
+}
+figure {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+}
+
+figure > img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 30px;
+}
+#photo-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+#Groupe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#Groupe > a {
+  width: 300px;
+  height: 50px;
+  background-color: #cbf3f0;
+  font-size: 24px;
+  margin-bottom: 25px;
+  border-radius: 30px;
+  line-height: 50px;
+  cursor: pointer;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+@keyframes before {
+  from {
+    transform: translateX(-300px) scale(0.7, 0.7);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-300px) scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+}
+
+@keyframes selected {
+  from {
+    transform: translateX(-300px) scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateX(0px) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes after {
+  from {
+    transform: translateX(0px) scale(1, 1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(300px) scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+}
+
+@keyframes hide {
+  from {
+    transform: translateX(300px) scale(0.7, 0.7);
+    opacity: 0.7;
+  }
+  to {
+    transform: translateX(300px) scale(0.7, 0.7);
+    opacity: 0;
+  }
+}
