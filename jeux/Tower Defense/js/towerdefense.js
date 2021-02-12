@@ -102,6 +102,7 @@ function EnnemisMove() {
 
 function EnnemisDraw() {
   for (let i = 0; i < Ennemis.length; i++) {
+    if(Ennemis[i].x > -30){
     ctx.beginPath();
     ctx.arc(Ennemis[i].x, Ennemis[i].y, 30, 0, Math.PI * 2);
     if (Ennemis[i].lvl == 1) {
@@ -117,7 +118,7 @@ function EnnemisDraw() {
     }
     ctx.fill();
     ctx.closePath();
-  }
+  }}
 }
 function Buy(what) {
   if (what == "Canon") {
@@ -350,7 +351,7 @@ function calculDistance() {
 
 function calculAngle(nb) {
   //calcul l'angle pour l'orientation de la tour
-  if (TowerList[nb].target.length > 0) {
+  if (TowerList[nb].target.length > 0 && Ennemis.length > 0) {
     TowerList[nb].angle = Math.round(
       (Math.atan2(
         Ennemis[TowerList[nb].target[0]].y - TowerList[nb].y,
