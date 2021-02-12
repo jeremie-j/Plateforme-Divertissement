@@ -1,0 +1,1 @@
+Le Juste Prix est un jeu dans lequel l’utilisateur doit deviner un chiffre entre 2 valeurs (0 et 100 par défaut). Le but étant de le trouver en un minimum de tentatives possibles. Dans cette version l’utilisateur peut changer la valeur maximale pour se compliquer la tâche, ou laisser le Bot travailler pour lui.

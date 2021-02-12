@@ -1,0 +1,1 @@
+Jeu idle inspiré de cookie clicker, chaque clic sur l'image de biere vous donne une pinte avec une possibilité d'acheter des améliorations augmentant la puissance de vos clic ou générant des pintes de maniere passive chaque seconde 

@@ -1,0 +1,96 @@
+body::after {
+    background-image: url("Images/tarot.jpg");
+    content: "";
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+  }
+
+img{
+    cursor:pointer;
+}
+
+h1 {
+    font: bold;
+    font-size: 5vh;
+    font-family: Poppins;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.container_tableau {
+    width: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat( 5, 5vw);
+    gap: 1vw;
+}
+
+.image {
+    width: 100%;
+    outline-style:none;
+}
+
+.image:hover {
+    opacity: 0.77;
+}
+
+.final {
+    width: 100%;
+    outline-style:none;
+}
+
+.div_score {
+    position: absolute;
+    right: 14%;
+    top: 14vh;
+}
+
+p {
+    font-size: 3.5vh;
+    font-family: Poppins;
+    margin: auto;
+    width: 20vw;
+    font-style: italic;
+}
+
+.button1 {
+    color: #e7e7e7;
+    font-family: Poppins;
+    font-size: 2vh;
+    border-radius: 8px;
+    height: 4vh;
+    width: 12vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    background-color: rgba(24, 24, 24, 0.95);;
+}
+
+.button1:hover {
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.victory {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 20%;
+}
+
+.victory_hidden {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 20%;
+    visibility: hidden;
+}

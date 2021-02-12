@@ -1,0 +1,1 @@
+Le jeu des paires est un jeu dans lequel l’utilisateur doit retrouver toutes les paires cachées dans un set de carte. Chaque fois que le joueur trouve une paire il gagne du score, et inversement à chaque fois que celui-ci se trompe il en perd. Le but étant de trouver toutes les cartes et de comptabiliser le meilleur score possible.
